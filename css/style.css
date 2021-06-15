@@ -128,6 +128,10 @@ main{
     margin: 10px 0;
     font-weight: 400;
 }
+
+.bottom .testo{
+    color: gray;
+}
 /* FINE parte FLOAT del contenuto */
 /* FINE spazio contenuto */
 /* FINE spazio main */
@@ -135,6 +139,12 @@ main{
 footer{
     text-align: center;
     line-height: 50px;
+    font-weight: 400;
+}
+
+footer span{
+    color: red;
+    font-size: 22px;
 }
 
 /* spazio debug */
