@@ -15,12 +15,33 @@
     width: 60%;
     margin: 0 auto;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 /* FINE GENERALE */
 
 header{
     margin: 20px 0;
 }
 
+header img{
+    height: 50px;
+    border-right: 1px solid lightgray;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+    padding-right: 10px;
+}
 
 main{
     margin-bottom: 10px;
@@ -66,7 +87,6 @@ footer{
 
 .debug header{
     background-color: sandybrown;
-    height: 100px;
 }
 
 .debug main{
