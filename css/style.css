@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.clearfix{
+.clearfix::after{
     content: "";
     display: table;
     clear: both;
@@ -20,6 +20,12 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 14px;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.329);
+    position: absolute;
+    inset: 0;
 }
 /* FINE GENERALE */
 
@@ -45,11 +51,12 @@ nav a{
     padding-right: 10px;
 }
 
+/* INIZIO spazio main */
 main{
     margin-bottom: 10px;
 }
 
-/* contenuto main */
+/* INIZIO spazio slider */
 .slider{
     height: 300px;
     margin-bottom: 20px;
@@ -65,12 +72,6 @@ main{
     width: 100%;
 }
 
-.overlay{
-    background-color: rgba(0, 0, 0, 0.329);
-    position: absolute;
-    inset: 0;
-}
-
 .slider .testo{
     color: white;
     position: absolute;
@@ -84,13 +85,15 @@ main{
     font-weight: 400;
 
 }
+/* FINE spazio slider */
 
+/* INIZIO spazio contenuto */
 .contenuto{
     padding-bottom: 10px;
 }
 
 .contenuto .top{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* parte FLOAT del contenuto */
@@ -106,10 +109,32 @@ main{
     margin: 0 10px;
     width: calc((100% / 4) * 2);
 }
-/* FINE parte FLOAT del contenuto */
 
+.side .immagine,.banner{
+    height: 150px;
+    position: relative;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bottom img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.bottom h3{
+    margin: 10px 0;
+    font-weight: 400;
+}
+/* FINE parte FLOAT del contenuto */
+/* FINE spazio contenuto */
+/* FINE spazio main */
 
 footer{
+    text-align: center;
+    line-height: 50px;
 }
 
 /* spazio debug */
@@ -140,6 +165,10 @@ footer{
 
 .debug .center,.debug .side{
     background-color: lightskyblue;
+}
+
+.debug .side .immagine,.debug .banner{
+    background-color: red;
 }
 
 .debug footer{
