@@ -18,6 +18,8 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
 }
 /* FINE GENERALE */
 
@@ -51,6 +53,36 @@ main{
 .slider{
     height: 300px;
     margin-bottom: 20px;
+    position: relative;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slider img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.329);
+    position: absolute;
+    inset: 0;
+}
+
+.slider .testo{
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+
+    width: calc(50% - 30px);
+}
+
+.slider h1{
+    font-weight: 400;
+
 }
 
 .contenuto{
