@@ -1,0 +1,97 @@
+/* GENERALE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+/* FINE GENERALE */
+
+header{
+    margin: 20px 0;
+}
+
+
+main{
+    margin-bottom: 10px;
+}
+
+/* contenuto main */
+.slider{
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.contenuto{
+    padding-bottom: 10px;
+}
+
+.contenuto .top{
+    margin-bottom: 10px;
+}
+
+/* parte FLOAT del contenuto */
+.bottom .side,.center{
+    float: left;
+}
+
+.bottom .side{
+    width: calc((100% / 4) - 10px);
+}
+
+.bottom .center{
+    margin: 0 10px;
+    width: calc((100% / 4) * 2);
+}
+/* FINE parte FLOAT del contenuto */
+
+
+footer{
+}
+
+/* spazio debug */
+.debug{
+    background-color: lightgray;
+}
+
+.debug header{
+    background-color: sandybrown;
+    height: 100px;
+}
+
+.debug main{
+    background-color: indigo;
+}
+
+.debug .slider{
+    background-color: lightgreen;
+}
+
+.debug .contenuto{
+    background-color: blue;
+}
+
+.debug .contenuto .top{
+    background-color: lightskyblue;
+    height: 50px;
+}
+
+.debug .center,.debug .side{
+    background-color: lightskyblue;
+}
+
+.debug footer{
+    background-color: lightcoral;
+    height: 50px;
+}
+/* FINE spazio debug */
